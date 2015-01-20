@@ -10,8 +10,8 @@ eprefix=${prefix}
 #MORE_WARNINGS=-Weffc++
 WFLAGS=-Wall -W -Wshadow -Wpointer-arith -Wwrite-strings -pedantic -ffor-scope -Wcast-align -Wsign-compare -Wpointer-arith -Wwrite-strings -Wformat-security -Wswitch-enum -Winit-self $(MORE_WARNINGS)
 CFLAGS=-O2  -DNDEBUG $(WFLAGS) $(MORECFLAGS)
-CXX=g++ $(CFLAGS)
-LINK=g++
+CXX=clang++ $(CFLAGS)
+LINK=clang++
 THREAD_LFLAGS=-lpthread
 
 INSTALL=/usr/bin/install -c
