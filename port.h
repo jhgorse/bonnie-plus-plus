@@ -49,8 +49,6 @@ typedef struct timeval TIMEVAL_TYPE;
 #endif
 
 typedef int FILE_TYPE;
-#define __min min
-#define __max max
 typedef unsigned int UINT;
 typedef unsigned long ULONG;
 typedef const char * PCCHAR;

@@ -38,7 +38,7 @@ double Duration_Base::stop()
   getTime(&tv);
   double ret;
   ret = tv - m_start;
-  m_max = __max(m_max, ret);
+  m_max = max(m_max, ret);
   return ret;
 }
 
